@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="container"> 
+            <h3>Login</h3>    
+            <label for="">E-mail</label>
+            <input type="text" id="email">
+            <br><br>
+            <label for="">Senha</label>
+            <input type="password" id="senha" required>
+            <br><br>
+            <button onclick="fazerLogin()">Entrar</button>          
+        </div> 
+    </center>
+    <script>
+        function fazerLogin(){
+        
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            if(email == "mariana@gmail.com", senha == "senha123"){
+                    window.location.href = "index.html";
+                }else{
+                    alert("Email ou senha incorretos. Tente novamente!");
+                } 
+
+        }
+    </script>
+</body>
+</html>
